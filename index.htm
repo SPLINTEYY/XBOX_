@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="xbox_img/Xbox_one.png" type="xbox_img/logo">
+    <title>XBOX FAN PAGE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./xbox_img/vai.png" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Controlles</a></li>
+                    <li><a href="">VR Accessories</a></li>
+                    <li><a href="">Media Remotes</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="./xbox_img/menu.png" class="Icon_menu" onclick="togglemenu()">
+        </div>
+        
+       <div class="row"> 
+        <div class="col-1">
+            <h2>XBOX ONE<br>Black Elite Controller</h2>
+            <h3>Control With Haptic Function</h3>
+            <p>(Original Joystick)</p>
+            <h4>$37.99</h4>
+            <button type="button">Buy now<img src="./xbox_img/arrow.png"></button>
+        </div>
+        <div class="col-2">
+           <img src="./xbox_img/teste.webp" class="controller">
+           <div class="color-box"></div>
+           <div class="add-btn">
+              <img src="./xbox_img/add.png">
+              <p><small>Add to cart</small></p>
+           </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <img src="./xbox_img/fb.png">
+        <img src="./xbox_img/ig.png">
+        <img src="./xbox_img/tw.png">
+      </div>
+    </div>
+    
+      <script>
+
+        var menuList = document.getElementById("menuList");
+        
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+
+            if(menuList.style.maxHeight == "0px")
+            {
+                menuList.style.maxHeight = "130px";
+            }
+            else{
+                menuList.style.maxHeight = "0px";
+            }
+        }
+
+      </script>
+</body>
+</html>
